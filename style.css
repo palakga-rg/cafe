@@ -1,0 +1,237 @@
+
+*{
+margin: 0px;
+padding: 0px;
+}
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+#navbar ul{
+    display: flex;
+ 
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('6.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+  
+}
+#services .box img{ 
+  height:160px;
+    margin: auto;
+    display: block;
+ }
+ 
+
+
+
+.b{
+    position: relative;
+    width:100vw;
+    height:10vh;
+    background-color: black;
+
+}
+.b p{
+   
+    color:white;
+    font-size:2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    animation :b 15s linear infinite;
+
+}
+@keyframes b{
+    0%{
+        transform: translateX(100%);
+    }
+    
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+
+btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+
+.h-primary{
+    
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+   
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+/* 
+
+li{
+    list-style: none;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+flex-direction: row;
+
+height: 10vh;
+width: 100vw;
+background-color: black ;
+z-index: -1;
+opacity:0.7
+}
+.navlist{
+    display: flex;
+    flex-direction: row;   
+    margin: 6px;
+padding: 20px;
+text-decoration: none;
+color:white;
+}
+.logo{
+    margin: 8px;
+}
+img{
+    height: 8vh;
+    
+}
+a{
+    margin: 10px;
+padding: 20px;
+text-decoration: none;
+color:white;
+}
+.main{
+    background: url('bg1.jpg') no-repeat center cover;
+   
+   width: 100vh;
+
+}
+.food{
+    background-position: cover;
+    height: 50vh;
+    width:100vw;
+}
+.gif{
+width: 30vw;
+height: 40vh;
+display:block;
+margin: auto;
+}
+.main{
+    border: 2px solid black;
+} */
